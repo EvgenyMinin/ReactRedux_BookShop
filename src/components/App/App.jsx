@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { withBookstoreService } from '../hoc';
 import './App.scss';
 
-class App extends Component {
-    state = {  }
-    render() { 
-        return (
-            <h1>Hello react</h1>
-        );
-    }
+const App = ({ bookstoreService }) => {
+    console.log(bookstoreService.getBooks());
+    return (
+        <h1>Hello react</h1>
+    );
 }
  
-export default App;
+export default withBookstoreService()(App);
