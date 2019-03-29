@@ -7,6 +7,7 @@ import ErrorBoundry from './components/ErrorBoundry';
 import BookstoreService from './services/bookstore-service';
 import { BookstoreServiceProvider } from './components/BookstoreServiceContext';
 import store from './store';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = document.getElementById('root');
 const bookstoreService = new BookstoreService();
