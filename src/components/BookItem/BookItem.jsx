@@ -9,9 +9,9 @@ const BookItem = ({ book }) => {
                 <img src={coverImage} alt="cover"/>
             </div>
             <div className="book-details">
-                <a href="#" className='book-details__book-title' >{title}</a>
-                <div className="book-details__book-author">{author}</div>
-                <div className="book-details__book-price">${price}</div>
+                <label className='book-details__book-title' >{title}</label>
+                <p className="book-details__book-author">{author}</p>
+                <p className="book-details__book-price">${price}</p>
                 <button className='btn btn-info'>Add to cart</button>
             </div>
         </div>

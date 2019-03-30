@@ -18,7 +18,12 @@
     padding-bottom: 10px;
     align-items: flex-start;
     &__book-title {
-        font-size: 1.2em;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    &__book-author {
+        font-style: italic;
+        margin-bottom: 0;
     }
     &__book-price {
         font-size: 1.4em;
