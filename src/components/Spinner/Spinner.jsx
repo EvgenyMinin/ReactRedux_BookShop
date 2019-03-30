@@ -3,7 +3,11 @@ import './Spinner.scss';
 
 const Spinner = () => {
     return (
-        <h1>Spinner</h1>
+        <div className="lds-css ng-scope">
+            <div className="lds-rolling">
+                <div></div>
+            </div>
+        </div>
     );
 }
  
