@@ -1,7 +1,7 @@
 import React from 'react';
 import './BookItem.scss';
 
-const BookItem = ({ book }) => {
+const BookItem = ({ book, onAddedToCart }) => {
     const { title, author, price, coverImage } = book;
     return (
         <div className='book-item'>
@@ -12,7 +12,12 @@ const BookItem = ({ book }) => {
                 <label className='book-details__book-title' >{title}</label>
                 <p className="book-details__book-author">{author}</p>
                 <p className="book-details__book-price">${price}</p>
-                <button className='btn btn-info'>Add to cart</button>
+                <button
+                    className='btn btn-info'
+                    onClick={onAddedToCart}
+                >
+                    Add to cart
+                </button>
             </div>
         </div>
     );
